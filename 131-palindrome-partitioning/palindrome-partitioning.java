@@ -24,6 +24,9 @@ class Solution {
     boolean isPal(String s, int l, int r) {
         while (l < r) if (s.charAt(l++) != s.charAt(r--)) return false;
         return true;
+    }
 
+    public static void main(String[] args) {
+        System.out.println(new Solution().partition("aab"));
     }
 }
